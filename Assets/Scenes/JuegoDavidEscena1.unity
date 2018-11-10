@@ -262,6 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 471189012}
   - component: {fileID: 471189013}
+  - component: {fileID: 471189014}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -276,7 +277,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 471189011}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.42, y: -3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1524476234}
@@ -294,6 +295,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234e45fbb6954ac4a8f1a603b86905e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &471189014
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 471189011}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b72a7919fa64d3d4b9df52747da3e543, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &529625822
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +553,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.0000076294, y: 0}
   m_SizeDelta: {x: 640, y: 360}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1524476233
@@ -561,7 +579,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1524476233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.1, y: -3.67, z: -0.1}
+  m_LocalPosition: {x: 0.8, y: -0.5, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 471189012}
@@ -727,7 +745,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2034424996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -2.2999878, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2140353755}
@@ -735,8 +753,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000047684, y: 3}
-  m_SizeDelta: {x: 0, y: 6}
+  m_AnchoredPosition: {x: -2.3, y: 3}
+  m_SizeDelta: {x: -136.3, y: 6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2034424998
 MonoBehaviour:
@@ -806,6 +824,7 @@ MonoBehaviour:
   plataforma: {fileID: 136596854}
   UiIdle: {fileID: 921075084}
   gameState: 0
+  player: {fileID: 471189011}
 --- !u!114 &2140353752
 MonoBehaviour:
   m_ObjectHideFlags: 0

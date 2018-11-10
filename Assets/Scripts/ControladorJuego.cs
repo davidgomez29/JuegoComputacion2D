@@ -15,7 +15,7 @@ public class ControladorJuego : MonoBehaviour {
 	public enum GameState {Idle, Playing};
 	public GameState gameState = GameState.Idle;
 
-
+	public GameObject player;
 
 
 	// Use this for initialization
@@ -30,6 +30,7 @@ public class ControladorJuego : MonoBehaviour {
 		if(gameState == GameState.Idle && (Input.GetKeyDown("up") || Input.GetMouseButtonDown(0))){
 			gameState = GameState.Playing;
 			UiIdle.SetActive(false);
+			player.SendMessage("UpdateState", "PlayerRun");
 			
 		}
 		//juego en marcha
