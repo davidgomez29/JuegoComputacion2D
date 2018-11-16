@@ -24,14 +24,20 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.15
+        time: 0.3
         value: {x: -6.42, y: -0.5, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.3
+        time: 0.5833333
         value: {x: -6.42, y: -1.5, z: 0}
+        inSlope: {x: 0, y: -3.1153848, z: 0}
+        outSlope: {x: 0, y: -3.1153848, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.1666666
+        value: {x: -6.42, y: -3.2, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -45,12 +51,14 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300016, guid: 6725081dc75cc854ea2d767b7410e1db, type: 3}
-    - time: 0.15
+    - time: 0.38333333
       value: {fileID: 21300018, guid: 6725081dc75cc854ea2d767b7410e1db, type: 3}
-    - time: 0.3
+    - time: 0.5833333
       value: {fileID: 21300020, guid: 6725081dc75cc854ea2d767b7410e1db, type: 3}
-    - time: 0.45
+    - time: 0.8666667
       value: {fileID: 21300022, guid: 6725081dc75cc854ea2d767b7410e1db, type: 3}
+    - time: 1.1666666
+      value: {fileID: 21300016, guid: 6725081dc75cc854ea2d767b7410e1db, type: 3}
     attribute: m_Sprite
     path: Body
     classID: 212
@@ -81,12 +89,13 @@ AnimationClip:
     - {fileID: 21300018, guid: 6725081dc75cc854ea2d767b7410e1db, type: 3}
     - {fileID: 21300020, guid: 6725081dc75cc854ea2d767b7410e1db, type: 3}
     - {fileID: 21300022, guid: 6725081dc75cc854ea2d767b7410e1db, type: 3}
+    - {fileID: 21300016, guid: 6725081dc75cc854ea2d767b7410e1db, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.46666667
+    m_StopTime: 1.1833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -112,13 +121,19 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.15
+        time: 0.3
         value: -6.42
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.3
+        time: 0.5833333
+        value: -6.42
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.1666666
         value: -6.42
         inSlope: 0
         outSlope: 0
@@ -140,14 +155,20 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.15
+        time: 0.3
         value: -0.5
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.3
+        time: 0.5833333
         value: -1.5
+        inSlope: -3.1153848
+        outSlope: -3.1153848
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.1666666
+        value: -3.2
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -168,13 +189,19 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.15
+        time: 0.3
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.3
+        time: 0.5833333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 1.1666666
         value: 0
         inSlope: 0
         outSlope: 0
@@ -190,4 +217,18 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.11666667
+    functionName: DustStop
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.0666667
+    functionName: DustPlay
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
